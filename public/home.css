@@ -1,0 +1,200 @@
+.colorheader{
+    background-color: #EAC926;
+}
+
+.colormain{
+    background-color: #ebebeb;
+}
+
+.coloriconoenvio{
+    color: #39b54a;
+    margin: 0 px ;
+    padding: 0 px ;
+    box-sizing: border-box ;
+
+}
+
+.colortletragrises{
+    color: #666;
+}
+
+.iconofoot{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.iconoazul{
+    color: #1259c3;
+}
+
+.iconobarra{
+    color: white;
+    background-color:#1259c3;
+    font-size: 3em;
+}
+
+.titulo{
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.precio{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.descuentosdescripciones{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cuerpostexto{
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+}
+
+.alineacion{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.margen20px{
+    margin-left: 20px;
+}
+
+.iconolupa{
+    background-color: white;
+}
+
+.displaybloque{
+    display: block;
+}
+
+/* responsividad imagen banner */
+.responsividadimagenbanner{
+    width: 100%;
+    height: 70%;
+}
+
+/* responsividad imagen principal */
+.responsividadimageprincipal{
+    width: 30%;
+    height: 30%;
+
+}
+/* responsividad imagen productos */
+.responsividadimagenproductos{
+    width:90%;
+    height: 90%;
+
+}
+
+/* responsividad barra busqueda */
+.barradebusqueda{
+    width: 30%;
+    height: 30%;
+
+}
+
+/* a toda la seccion main le doy de ancho el 90% de la pantalla */
+.mainwidth{
+    width: 90%;
+    margin: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+/* separacion de 15px de margen inferiro de productos y borde de 1px color gris */
+.cajaYSeparacion{
+    margin-bottom: 15px;
+    border: solid 1px #ebebeb;
+    margin-top: 1px;
+    background-color: white;
+
+}
+/* flexbox padre de ofertas y precios */
+.flexboxpreciofertas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+
+
+}
+
+/* propiedades de los hijos */
+.flexhijos30{
+    flex-basis: 30%;
+}
+
+/* propiedades de los hijos */
+.flexhijos70{
+    flex-basis: 70%;
+}
+
+
+/* @media para MOBILE, determina como se ve en modo tablet */
+@media only screen and (min-width: 0px) and (max-width:361px){
+
+
+    /* oculta las descripciones en modo tablet */
+    .ocultamobile{
+        display: none;
+    }
+    
+}
+
+/* @media para TABLET, determina como se ve en modo table */
+@media only screen and (min-width:362px) and (max-width:768px){
+ 
+    .ocultarhamburguesa{
+        display: none;
+    }
+
+    /* le da como una sombra a la caja */
+    .boxshadow{
+        box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
+
+    }
+    .flextablet{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       
+    }
+    .propiedadhijotablet{
+        flex-basis: 50%;
+    }
+
+    .displaytabletnone{
+        display: none;
+    }
+
+}
+
+/* @media para PC, determina como se ve en modo desktop */
+@media only screen and (min-width:769px) and (max-width:1280px){
+ 
+    .ocultarhamburguesa{
+        display: none;
+    }
+
+    /* ver donde ponerlo porque no veo donde lo puse */
+    /* le da como una sombra a la caja */
+    .boxshadow{
+        box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
+
+    }
+    .flextpc{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+       
+    }
+    .propiedadhijopc{
+        flex-basis: 25%;
+    }
+}
+
