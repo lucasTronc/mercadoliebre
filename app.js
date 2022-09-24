@@ -18,6 +18,16 @@ app.get("/",(req,res)=>{
 
 })
 
+app.get("/register",(req,res)=>{
+    res.sendFile((__dirname + "/views/register.html"))//levanta el archivo home
+
+})
+
+app.get("/login",(req,res)=>{
+    res.sendFile((__dirname + "/views/login.html"))//levanta el archivo home
+
+})
+
 //rutas genericas  
 app.get("*",(req,res)=>{//aca le paso la locaciona a donde redirecciono que es *
     res.send("rutas no asignadas")

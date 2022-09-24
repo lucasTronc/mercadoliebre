@@ -36,6 +36,7 @@
 .titulo{
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 .precio{
@@ -74,13 +75,13 @@
 /* responsividad imagen banner */
 .responsividadimagenbanner{
     width: 100%;
-    height: 70%;
+    height: 100%;
 }
 
 /* responsividad imagen principal */
 .responsividadimageprincipal{
-    width: 30%;
-    height: 30%;
+    width: 100%;
+    height: 100%;
 
 }
 /* responsividad imagen productos */
@@ -90,12 +91,6 @@
 
 }
 
-/* responsividad barra busqueda */
-.barradebusqueda{
-    width: 30%;
-    height: 30%;
-
-}
 
 /* a toda la seccion main le doy de ancho el 90% de la pantalla */
 .mainwidth{
@@ -134,15 +129,44 @@
 }
 
 
+
+
+
 /* @media para MOBILE, determina como se ve en modo tablet */
 @media only screen and (min-width: 0px) and (max-width:361px){
 
 
-    /* oculta las descripciones en modo tablet */
+    /* oculta las descripciones en modo cel */
     .ocultamobile{
         display: none;
     }
-    
+
+    .flexcel{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+       
+    }
+    .propiedadhijoscel{
+        flex-basis: 50%;
+        
+    }
+
+    .displaycelnone{
+        display: none;
+    }
+
+    .logobarrafelx{
+        width: 100%;
+        height: 100%;
+    }
+
+    .celalineacion{
+        text-align: center;
+    }
+
+
 }
 
 /* @media para TABLET, determina como se ve en modo table */
@@ -165,9 +189,46 @@
     }
     .propiedadhijotablet{
         flex-basis: 50%;
+
     }
 
     .displaytabletnone{
+        display: none;
+    }
+
+    .flexpadrelistaizquierda{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .flexhijolista{
+        margin: 10px;
+    }
+
+    .flexpadrelistaderecha{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .flexmaster{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+    }
+
+    .flexmasterbottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .displaynonetab{
         display: none;
     }
 
@@ -196,5 +257,42 @@
     .propiedadhijopc{
         flex-basis: 25%;
     }
+
+    .flexpadrelistaizquierda{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .flexhijolista{
+        margin: 10px;
+    }
+
+    .flexpadrelistaderecha{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .flexmaster{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+    }
+
+    .flexmasterbottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .dimensionlogo{
+        width: 50%;
+    }
+
 }
 

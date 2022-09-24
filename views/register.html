@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/registro" method ="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre">
+        <br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido">
+        <br>
+        <label for="fecha">Fecha:</label>
+        <input type="date" name="fecha" />
+        <br>
+        <label for="domicilio">Domicilio:</label>
+        <input type="text" name="domicilio" id="domicilio">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="clave">
+        <br>
+        <label for="confirmar password">Confirmar Password:</label>
+        <input type="password" name="clave">
+        <br>
+        <label for="foto de usuario">Foto de usuario:</label>
+        <input type="file" name="archivo" accept=".jpg" multiple />
+        <br>
+        <label for="lang">Perfil Usuaruio:</label>
+        <select name="perfil" id="perfil">
+        <option value="Vender">Vender</option>
+        <option value="Comprar">Comprar</option>
+        </select>
+        <br>
+        <label for="lang">Categorias</label>
+        <select name="categorias" id="categorias">
+        <option value="Electro">Electro</option>
+        <option value="Moda">Moda</option>
+        <option value="Hogar">Hogar</option>
+        <option value="Juguetería">Juguetería</option>
+        <option value="Vida sana">Vida sana</option>
+        </select>
+        <br>
+        <button type="reset">Cancelar</button>
+        <button type="submit">Enviar</button>
+
+     
+
+    </form>
+</body>
+</html>

@@ -15,8 +15,6 @@
     <script src="https://kit.fontawesome.com/d6988a501d.js" crossorigin="anonymous"></script>
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
-
 </head>
 
 <body>
@@ -24,46 +22,64 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
     <header class = "colorheader"><!--estructura de header-->
-        <section><!--logo, se achico la imagen y se dio margen de 20px-->
-            <img src  = "/logo-mercado-liebre.svg" class = " responsividadimageprincipal margen20px">
-        </section>
-        <nav class= "margen20px"><!--barra navegacion-->
-            <input type="barra de busqueda " class = "displaybloque barradebusqueda">
-            <i class="fa-solid fa-magnifying-glass iconolupa"></i>
-        </nav>
-        <p class = "titulo alineacion" ><!--parrafo-->
-            <!-- icono de manito con plata -->
-            <i class="fa-solid fa-hand-holding-dollar"></i>
-            Compra en cuotas y sin tarjeta de credito
-        </p>
-        <section><!--barra de navegacion-->
-            <ul class = "descuentosdescripciones ocultamobile"><!--lista desordenada-->
-                <li>Ofertas</li>
-                <li>Tiendas Oficiales</li>
-                <li>Vender</li>
-                <li>Ayuda</li>
-                <br>
-                <!-- elementos de la lista que tambien tienen un icono al final -->
-                <li>Crea tu Cuenta<i class="fa-solid fa-circle-user"></i></li>
-                <li>Ingresa<i class="fa-solid fa-right-to-bracket"></i></li>
-                <li>Mis Compras<i class="fa-solid fa-cart-shopping"></i></li>
-            </ul>
-        </section>
-        <section class ="alineacion ocultarhamburguesas">
+            <div class = "flexmaster">
+                <div class = "flexcel dimensionlogo  ">
+                    <div class ="propiedadhijoscel ">
+                        <img src  = "/logo-mercado-liebre.svg" class = " responsividadimageprincipal logobarrafelx ">
+                    </div>
+                    <div class = " propiedadhijoscel  ">
+                        <nav class= "margen20px  "><!--barra navegacion-->
+                            <input type="barra de busqueda " class = "logobarrafelx ">
+                            <i class="fa-solid fa-magnifying-glass iconolupa"></i>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class = "dimensionlogo">
+                    <p class = "titulo celalineacion "  ><!--parrafo-->
+                        <!-- icono de manito con plata -->
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        Compra en cuotas y sin tarjeta de credito
+                    </p>
+                </div>
+            </div>             
+
+            <div class = "displaycelnone flexmaster "><!--barra de navegacion-->
+                <div class ="flexpadrelistaizquierda  ">
+                        <div class = "flexhijolista"><p>Ofertas</p></div>
+                        <div class = "flexhijolista"><p>Tiendas Oficiales</p></div>
+                        <div class = "flexhijolista"><p>Vender</p></div>
+                        <div class = "flexhijolista"><p>Ayuda</p></div>
+                </div>
+
+                <div class = "flexpadrelistaderecha  ">
+                    <div class ="flexhijolista"><a href="/register" target="_blank"><p><i class="fa-solid fa-right-to-bracket"></i>Crea tu cuenta</p></a></div>
+                    <div class="flexhijolista"><a href="/login" target="_blank"><p><i class="fa-solid fa-right-to-bracket"></i>Ingresar</p></a></div>
+                    <div class="flexhijolista" ><p><i class="fa-solid fa-cart-shopping"></i>Mis Compras</p></div>
+                    .
+                </div>
+            </div>
+
+
+        <div class ="alineacion ocultarhamburguesa">
             <!-- icono hamburguesa -->
             <i class="fa-solid fa-bars iconobarra" ></i>
-        </section>
+        </div>
         <!-- imagen banner -->
-        <img src="/img-home-banner.jpg" class ="responsividadimagenbanner">
+        <img src="/img-home-banner.jpg" class ="responsividadimagenbanner ">
     </header><!--fin estructura del header-->
     <main class =" colormain mainwidth alineacion"><!--estructura del main, a toda la seccion main le doy de ancho el 90% de la pantalla */-->
 
         <section><!--basado en ultiama visita-->
-            <l1><strong class ="titulo displaybloque colortletragrises ">Basado en tu ultima visita</strong></l1><!--titulo de seccion-->
+        <br>
+        <br>
+        <br>
+        <l1><strong class ="titulo  colortletragrises ">Basado en tu ultima visita</strong></l1><!--titulo de seccion-->
+
             <!-- felxbox de ultima visita -->
-            <div class =" flextablet flextpc ">
+            <div class =" flextablet flextpc  ">
                 <!-- item macbook -->
-                <div class = "propiedadhijotablet propiedadhijopc">
+                <div class = "propiedadhijotablet propiedadhijopc boxshadow">
                     <img src="/img-macbook-pro-2019.jpg" class ="responsividadimagenproductos "><!--imagen-->
                     <br>
                     <div class =" cajaYSeparacion mainwidth ">
@@ -76,7 +92,90 @@
                     </div>
                 </div>
                 <!-- item cafetera -->
-                <div class = "propiedadhijotablet propiedadhijopc">
+                <div class = "propiedadhijotablet propiedadhijopc boxshadow">
+                    <img src="/img-cafetera-moulinex.jpg" class ="responsividadimagenproductos "><!--imagen-->
+                    <br>
+                    <div class =" cajaYSeparacion mainwidth ">
+                        <i class="fa-solid fa-truck coloriconoenvio"></i>
+                        <div class ="flexboxpreciofertas" >
+                            <p><strong class = "precio colortletragrises flexhijos70">$6.770</strong></p><!--precio-->
+                            <p class = "descuentosdescripciones flexhijos30 ">40% off</p><!--descuento-->
+                        </div>  
+                        <p class = "descuentosdescripciones ocultamobile flexboxpreciofertas ">Cafetera Moulinex</p><!--nombre producto-->
+                    </div>
+                </div>
+                <div class = "propiedadhijotablet propiedadhijopc boxshadow displaynonetab">
+                    <img src="/moog.jpg" class ="responsividadimagenproductos "><!--imagen-->
+                    <br>
+                    <div class =" cajaYSeparacion mainwidth ">
+                        <i class="fa-solid fa-truck coloriconoenvio"></i>
+                        <div class ="flexboxpreciofertas" >
+                            <p><strong class = "precio colortletragrises flexhijos70">$200.770</strong></p><!--precio-->
+                            <p class = "descuentosdescripciones flexhijos30 ">70% off</p><!--descuento-->
+                        </div>  
+                        <p class = "descuentosdescripciones ocultamobile flexboxpreciofertas ">Sintetizador Moog</p><!--nombre producto-->
+                    </div>
+                </div>
+                <div class = "propiedadhijotablet propiedadhijopc boxshadow displaynonetab">
+                    <img src="/808.jpg" class ="responsividadimagenproductos "><!--imagen-->
+                    <br>
+                    <div class =" cajaYSeparacion mainwidth ">
+                        <i class="fa-solid fa-truck coloriconoenvio"></i>
+                        <div class ="flexboxpreciofertas" >
+                            <p><strong class = "precio colortletragrises flexhijos70">$100.770</strong></p><!--precio-->
+                            <p class = "descuentosdescripciones flexhijos30 ">30% off</p><!--descuento-->
+                        </div>  
+                        <p class = "descuentosdescripciones ocultamobile flexboxpreciofertas ">Drum machine 808</p><!--nombre producto-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section ><!--seccion de ofertas-->
+            <l1 class ="titulo colortletragrises propiedadhijopc"><strong>Seccion de ofertas</strong></l1><!--titulo de seccion-->
+            <!-- item telefono samsung -->
+            <div class =" flextablet flextpc ">
+                <div class = "propiedadhijotablet propiedadhijopc boxshadow">
+                    <img src="/img-samsung-galaxy-s10.jpg" class ="responsividadimagenproductos "><!--imagen-->
+                    <br>
+                    <div class =" cajaYSeparacion mainwidth ">
+                        <i class="fa-solid fa-truck coloriconoenvio"></i>
+                        <div class ="flexboxpreciofertas" >
+                            <p><strong class = "precio colortletragrises flexhijos70">$75.000</strong></p><!--precio-->
+                            <p class = "descuentosdescripciones flexhijos30">10% off</p><!--descuento-->
+                        </div> 
+                        <p class = "descuentosdescripciones ocultamobile flexboxpreciofertas">Samsung Galaxy s10</p><!--nombre producto-->
+                    </div>
+                </div>
+                <!-- item tv samsung smart -->
+                <div class = "propiedadhijotablet propiedadhijopc boxshadow">
+                    <img src="/img-tv-samsung-smart.jpg" class ="responsividadimagenproductos "><!--imagen-->
+                    <br>
+                    <div class =" cajaYSeparacion mainwidth ">
+                        <i class="fa-solid fa-truck coloriconoenvio"></i>
+                        <div class ="flexboxpreciofertas" >
+                            <p><strong class = "precio colortletragrises flexhijos70">$23.200</strong></p><!--precio-->
+                            <p class = "descuentosdescripciones flexhijos30">5% off</p><!--descuento-->
+                        </div> 
+                        <p class = "descuentosdescripciones ocultamobile flexboxpreciofertas">Samsung 43"</p><!--nombre producto-->
+                    </div>
+                </div>
+                <div class = "propiedadhijotablet propiedadhijopc boxshadow displaynonetab">
+                    <img src="/img-macbook-pro-2019.jpg" class ="responsividadimagenproductos "><!--imagen-->
+                    <br>
+                    <div class =" cajaYSeparacion mainwidth ">
+                        <i class="fa-solid fa-truck coloriconoenvio"></i>
+                        <div class ="flexboxpreciofertas" >
+                            <p><strong class = "precio colortletragrises flexhijos70">$230.000</strong></p><!--precio-->
+                            <p class = "descuentosdescripciones flexhijos30 ">20% off</p><!--descuento-->
+                        </div>  
+                        <p class = "descuentosdescripciones ocultamobile flexboxpreciofertas ">Mac Book Pro 2019</p><!--nombre producto-->
+                    </div>
+                </div>
+                <!-- item cafetera -->
+                <div class = "propiedadhijotablet propiedadhijopc boxshadow displaynonetab">
                     <img src="/img-cafetera-moulinex.jpg" class ="responsividadimagenproductos "><!--imagen-->
                     <br>
                     <div class =" cajaYSeparacion mainwidth ">
@@ -90,74 +189,49 @@
                 </div>
             </div>
         </section>
-
-        <section ><!--seccion de ofertas-->
-            <l1 class ="titulo displaybloque colortletragrises propiedadhijopc"><strong>Seccion de ofertas</strong></l1><!--titulo de seccion-->
-            <!-- item telefono samsung -->
-            <div class =" flextablet flextpc ">
-                <div class = "propiedadhijotablet propiedadhijopc ">
-                    <img src="/img-samsung-galaxy-s10.jpg" class ="responsividadimagenproductos "><!--imagen-->
-                    <br>
-                    <div class =" cajaYSeparacion mainwidth ">
-                        <i class="fa-solid fa-truck coloriconoenvio"></i>
-                        <div class ="flexboxpreciofertas" >
-                            <p><strong class = "precio colortletragrises flexhijos70">$75.000</strong></p><!--precio-->
-                            <p class = "descuentosdescripciones flexhijos30">10% off</p><!--descuento-->
-                        </div> 
-                        <p class = "descuentosdescripciones ocultamobile flexboxpreciofertas">Samsung Galaxy s10</p><!--nombre producto-->
-                    </div>
-                </div>
-            
-                <!-- item tv samsung smart -->
-                <div class = "propiedadhijotablet propiedadhijopc">
-                    <img src="/img-tv-samsung-smart.jpg" class ="responsividadimagenproductos "><!--imagen-->
-                    <br>
-                    <div class =" cajaYSeparacion mainwidth ">
-                        <i class="fa-solid fa-truck coloriconoenvio"></i>
-                        <div class ="flexboxpreciofertas" >
-                            <p><strong class = "precio colortletragrises flexhijos70">$23.200</strong></p><!--precio-->
-                            <p class = "descuentosdescripciones flexhijos30">5% off</p><!--descuento-->
-                        </div> 
-                        <p class = "descuentosdescripciones ocultamobile flexboxpreciofertas">Samsung 43"</p><!--nombre producto-->
-                    </div>
-                </div>
-            </div>
-        </section>
+        <br>
+        <br>
+        <br>
     </main>
     <footer ><!--footer-->
-        <section class = "alineacion"><!--paga con tarjeta de credito-->
-            <!-- icono tarjeta de credito -->
-            <i class="fa-solid fa-credit-card iconoazul iconofoot"></i>
-            <h1 class ="titulo colortletragrises"><strong>Paga con tarjeta de credito</strong></h1>
-            <p class = "cuerpostexto "><!--parrafo-->
-                Con Mercado Liebre Cash, tenes cuotas sin<br>
-                interes con tarjeta o efectivo en punto de pago<br>
-                !Y siempre es seguro!
-            </p>
-        </section>
-        <section class = "alineacion" ><!--enviar gratis desde $2.500-->
-            <!-- icono de regalo -->
-            <i class="fa-solid fa-gift iconoazul iconofoot"></i>
-            <h1 class ="titulo colortletragrises"><strong>Enviar gratis desde $2.500</strong></h1>
-            <p class = "cuerpostexto"><!--parrafo-->
-                Solo por estar registrad@ en Mercado Liebre<br>
-                tenes envios gratis de miles de productos. Es un<br>
-                beneficio de Mercado Puntos.
-            </p>
-        </section>
-        <section class = "alineacion"><!--Seguridad, de principio a fin-->
-            <!-- icono de seguridad -->
-            <i class="fa-solid fa-users iconoazul iconofoot"></i>
-            <h1 class ="titulo colortletragrises"><strong>Seguridad, de principio a fin</strong></h1>
-            <p class = "cuerpostexto "><!--parrafo-->
-                ¿No te gusta? !Devolvelo! En Mercado Liebre, no hay nada que<br>
-                no puedas hacer, porque estas siempre protegid@<br>
-                !Y siempre es seguro
-            </p>
-        </section>
-        <section><!--Copyrigth-->
-            <h1 class ="cuerpostexto"><strong>Copyright © 1999-2020 MercadLiebre S.R.L.</strong></h1>
-        </section>
+        <div class = "flexmasterbottom">
+            <section class = "alineacion"><!--paga con tarjeta de credito-->
+                <!-- icono tarjeta de credito -->
+                <i class="fa-solid fa-credit-card iconoazul iconofoot"></i>
+                <h1 class ="titulo colortletragrises"><strong>Paga con tarjeta de credito</strong></h1>
+                <p class = "cuerpostexto "><!--parrafo-->
+                    Con Mercado Liebre Cash, tenes cuotas sin<br>
+                    interes con tarjeta o efectivo en punto de pago<br>
+                    !Y siempre es seguro!
+                </p>
+            </section>
+            <section class = "alineacion" ><!--enviar gratis desde $2.500-->
+                <!-- icono de regalo -->
+                <i class="fa-solid fa-gift iconoazul iconofoot"></i>
+                <h1 class ="titulo colortletragrises"><strong>Enviar gratis desde $2.500</strong></h1>
+                <p class = "cuerpostexto"><!--parrafo-->
+                    Solo por estar registrad@ en Mercado Liebre<br>
+                    tenes envios gratis de miles de productos. Es un<br>
+                    beneficio de Mercado Puntos.
+                </p>
+            </section>
+            <section class = "alineacion"><!--Seguridad, de principio a fin-->
+                <!-- icono de seguridad -->
+                <i class="fa-solid fa-users iconoazul iconofoot"></i>
+                <h1 class ="titulo colortletragrises"><strong>Seguridad, de principio a fin</strong></h1>
+                <p class = "cuerpostexto "><!--parrafo-->
+                    ¿No te gusta? !Devolvelo! En Mercado Liebre, no hay nada que<br>
+                    no puedas hacer, porque estas siempre protegid@<br>
+                    !Y siempre es seguro
+                </p>
+            </section>
+        </div>
+        
+            <section><!--Copyrigth-->
+                <h1 class ="cuerpostexto"><strong>Copyright © 1999-2020 MercadoLiebre S.R.L.</strong></h1>
+            </section>
+        
+        
     </footer>
 
 </body>
